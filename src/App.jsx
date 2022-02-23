@@ -5,7 +5,7 @@ import Counter from "./components/Counter";
 const App = () => {
   const [count, setCount] = useState(0);
 
-  const decrementCount = () => setCount(count - 1);
+  const decrementCount = () => setCount(Math.max(0, count - 1));
   const incrementCount = () => setCount(count + 1);
 
   return (

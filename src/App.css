@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 4rem;
+
+  margin-top: 3rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-top: 3rem;
+}
+
+button {
+  height: 4rem;
+  width: 4rem;
+  font-size: 3rem;
+  border-radius: 5px;
+  border: none;
+}
+
+button.decrement {
+  background-color: #ff0f23;
+}
+
+button.decrement:hover {
+  background-color: #ff3646;
+}
+
+button.decrement:focus {
+  background-color: #f70015;
+}
+
+button.increment {
+  background-color: #33ff0f;
+}
+
+button.increment:hover {
+  background-color: #5fff43;
+}
+
+button.increment:focus {
+  background-color: #24ee00;
+}
